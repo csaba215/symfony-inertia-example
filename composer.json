@@ -1,4 +1,6 @@
 {
+    "name": "app/symfony-inertia-example",
+    "description": "Symfony example application using Inertia, Vue 3, and Vite.",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
@@ -10,6 +12,7 @@
         "doctrine/doctrine-bundle": "^3.2",
         "doctrine/doctrine-migrations-bundle": "^4.0",
         "doctrine/orm": "^3.6",
+        "pentatrion/vite-bundle": "^8.2",
         "phpdocumentor/reflection-docblock": "^6.0",
         "phpstan/phpdoc-parser": "^2.3",
         "skipthedragon/inertia-bundle": "dev-master@dev",
@@ -99,6 +102,7 @@
         }
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^4.3",
         "phpunit/phpunit": "^13.1",
         "symfony/browser-kit": "8.0.*",
         "symfony/css-selector": "8.0.*",
