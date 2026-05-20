@@ -1455,6 +1455,43 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     generate_final_classes?: bool|Param, // Default: true
  *     generate_final_entities?: bool|Param, // Default: false
  * }
+ * @psalm-type InertiaConfig = array{
+ *     root_view?: scalar|Param|null, // Default: "base.html.twig"
+ *     expose_shared_prop_keys?: bool|Param, // Default: true
+ *     validation?: array{
+ *         all_errors?: bool|Param, // Default: false
+ *     },
+ *     version?: array{
+ *         manifest_paths?: list<scalar|Param|null>,
+ *         asset_url?: scalar|Param|null, // Default: null
+ *     },
+ *     pages?: array{
+ *         ensure_pages_exist?: bool|Param, // Default: false
+ *         paths?: list<scalar|Param|null>,
+ *         extensions?: list<scalar|Param|null>,
+ *     },
+ *     testing?: array{
+ *         ensure_pages_exist?: bool|Param, // Default: true
+ *     },
+ *     history?: array{
+ *         encrypt?: bool|Param, // Default: false
+ *     },
+ *     ssr?: array{
+ *         enabled?: bool|Param, // Default: false
+ *         url?: scalar|Param|null, // Default: ""
+ *     },
+ *     csrf?: array{
+ *         enabled?: bool|Param, // Default: true
+ *         cookie_name?: scalar|Param|null, // Default: "XSRF-TOKEN"
+ *         header_name?: scalar|Param|null, // Default: "X-XSRF-TOKEN"
+ *         expire?: scalar|Param|null, // Default: 0
+ *         path?: scalar|Param|null, // Default: "/"
+ *         domain?: scalar|Param|null, // Default: null
+ *         secure?: scalar|Param|null, // Default: false
+ *         raw?: scalar|Param|null, // Default: false
+ *         samesite?: scalar|Param|null, // Default: "lax"
+ *     },
+ * }
  * @psalm-type ConfigType = array{
  *     imports?: ImportsConfig,
  *     parameters?: ParametersConfig,
@@ -1468,6 +1505,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     twig_extra?: TwigExtraConfig,
  *     security?: SecurityConfig,
  *     monolog?: MonologConfig,
+ *     inertia?: InertiaConfig,
  *     "when@dev"?: array{
  *         imports?: ImportsConfig,
  *         parameters?: ParametersConfig,
@@ -1484,6 +1522,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         security?: SecurityConfig,
  *         monolog?: MonologConfig,
  *         maker?: MakerConfig,
+ *         inertia?: InertiaConfig,
  *     },
  *     "when@prod"?: array{
  *         imports?: ImportsConfig,
@@ -1498,6 +1537,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         twig_extra?: TwigExtraConfig,
  *         security?: SecurityConfig,
  *         monolog?: MonologConfig,
+ *         inertia?: InertiaConfig,
  *     },
  *     "when@test"?: array{
  *         imports?: ImportsConfig,
@@ -1513,6 +1553,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         twig_extra?: TwigExtraConfig,
  *         security?: SecurityConfig,
  *         monolog?: MonologConfig,
+ *         inertia?: InertiaConfig,
  *     },
  *     ...<string, ExtensionType|array{ // extra keys must follow the when@%env% pattern or match an extension alias
  *         imports?: ImportsConfig,

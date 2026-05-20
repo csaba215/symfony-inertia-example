@@ -50,6 +50,9 @@
             "bin/phpunit"
         ]
     },
+    "skipthedragon/inertia-bundle": {
+        "version": "dev-master"
+    },
     "symfony/asset-mapper": {
         "version": "8.0",
         "recipe": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd8adc95d440891e86f6192c78489ec3",
+    "content-hash": "aada06ff929c6b873e26fc6d3a92c5ab",
     "packages": [
         {
             "name": "composer/semver",
@@ -1895,6 +1895,86 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.2"
             },
             "time": "2024-09-11T13:17:53+00:00"
+        },
+        {
+            "name": "skipthedragon/inertia-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/csaba215/inertia-bundle.git",
+                "reference": "d2fd9d6ff9943f2cb66b21a9bc022b94e508d931"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/csaba215/inertia-bundle/zipball/d2fd9d6ff9943f2cb66b21a9bc022b94e508d931",
+                "reference": "d2fd9d6ff9943f2cb66b21a9bc022b94e508d931",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^8.1",
+                "symfony/config": "^6.4|^7.4|^8.0",
+                "symfony/dependency-injection": "^6.4|^7.4|^8.0",
+                "symfony/http-client": "^6.4|^7.4|^8.0",
+                "symfony/http-kernel": "^6.4|^7.4|^8.0",
+                "symfony/security-csrf": "^6.4|^7.4|^8.0",
+                "symfony/serializer-pack": "^v1.3.0",
+                "symfony/twig-bundle": "^6.4|^7.4|^8.0",
+                "twig/extra-bundle": "^2.12|^3.0",
+                "twig/twig": "^2.12|^3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "symfony/framework-bundle": "^6.4|^7.4|^8.0",
+                "symfony/phpunit-bridge": "^6.4|^7.4|^8.0",
+                "symfony/property-access": "^6.4|^7.4|^8.0",
+                "symfony/serializer": "^6.4|^7.4|^8.0",
+                "symfony/var-dumper": "^6.4|^7.4|^8.0",
+                "symfony/yaml": "^6.4|^7.4|^8.0"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Rompetomp\\InertiaBundle\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/tests/"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Rompetomp\\InertiaBundle\\Tests\\": "tests/",
+                    "Rompetomp\\InertiaBundle\\Tests\\Fixtures\\": "tests/fixtures/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hannes Vermeire",
+                    "email": "hannesvermeire@gmail.com"
+                },
+                {
+                    "name": "Tudorache Leonard-Valentin",
+                    "email": "tudorache.leonard@wyverr.com"
+                }
+            ],
+            "description": "Inertia.js server-side adapter for maintained Symfony versions.",
+            "homepage": "https://github.com/SkipTheDragon/inertia-bundle",
+            "keywords": [
+                "Symfony",
+                "bridge",
+                "bundle",
+                "inertia",
+                "monolith",
+                "php"
+            ],
+            "support": {
+                "source": "https://github.com/csaba215/inertia-bundle/tree/master"
+            },
+            "time": "2026-05-17T12:11:03+00:00"
         },
         {
             "name": "symfony/asset",
@@ -6066,6 +6146,61 @@
             "time": "2026-05-04T13:41:39+00:00"
         },
         {
+            "name": "symfony/serializer-pack",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/serializer-pack.git",
+                "reference": "173d41c068b3cf150890a3d7700e203da13905bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/serializer-pack/zipball/173d41c068b3cf150890a3d7700e203da13905bd",
+                "reference": "173d41c068b3cf150890a3d7700e203da13905bd",
+                "shasum": ""
+            },
+            "require": {
+                "phpdocumentor/reflection-docblock": "*",
+                "phpstan/phpdoc-parser": "*",
+                "symfony/property-access": "*",
+                "symfony/property-info": "*",
+                "symfony/serializer": "*"
+            },
+            "conflict": {
+                "symfony/property-info": "<7.4",
+                "symfony/serializer": "<7.4"
+            },
+            "type": "symfony-pack",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A pack for the Symfony serializer",
+            "support": {
+                "issues": "https://github.com/symfony/serializer-pack/issues",
+                "source": "https://github.com/symfony/serializer-pack/tree/v1.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2026-03-03T10:13:59+00:00"
+        },
+        {
             "name": "symfony/service-contracts",
             "version": "v3.7.0",
             "source": {
@@ -9902,7 +10037,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "skipthedragon/inertia-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
